@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="2.1"
+              xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+              schemaLocation="pepXML_v118.xsd"
+              node="/xs:schema">
+
+    <jxb:globalBindings choiceContentProperty="true" localScoping="toplevel">
+        <!-- the serializable uid should reflect the version number 1.0.0 -->
+        <jxb:serializable uid="100"/>
+        <!-- this interface will be used to ensure type safety in generified methods -->
+        <xjc:superClass name="pepXMLObject"/>
+        <xjc:javaType name="java.util.Calendar" xmlType="xs:dateTime" adapter="CalendarAdapter" />
+
+    </jxb:globalBindings>
+
+    <jxb:schemaBindings>
+        <jxb:package name="uk.ac.ebi.jpepxml.model.pepxml"/>
+    </jxb:schemaBindings>
+
+
+
+    <jxb:bindings node="//xs:complexType[@name='nameValueType']">
+        <jxb:bindings node=".//xs:attribute[@name='value']">
+            <jxb:property name="valueAttribute"/>
+        </jxb:bindings>
+    </jxb:bindings>
+
+
+
+</jxb:bindings>

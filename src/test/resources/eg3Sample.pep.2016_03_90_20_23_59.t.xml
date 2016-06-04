@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pepXML_std.xsl"?>
+
+<msms_pipeline_analysis date="2016:03:30:20:23:59"  xmlns="http://regis-web.systemsbiology.net/pepXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sashimi.sourceforge.net/schema_revision/pepXML/pepXML_v115.xsd">
+   <msms_run_summary base_name="eg3Sample.mzXML" search_engine="Hydra(Comet)" msManufacturer="Thermo Scientific" msModel="LTQ" msIonization="NSI" msMassAnalyzer="ITMS" msDetector="unknown" raw_data_type="raw" raw_data=".mzXML">
+      <sample_enzyme name="trypsin">
+         <specificity cut="KR" no_cut="P" sense="C"/>
+      </sample_enzyme>
+<search_summary base_name="eg3Sample.mzXML" search_engine="Hydra(Comet)" precursor_mass_type="monoisotopic" fragment_mass_type="monoisotopic" search_id="1">
+         <search_database local_path="SmallSampleProteins" type="AA" />
+        <enzymatic_search_constraint enzyme="trypsin" max_num_internal_cleavages="2" />
+ <aminoacid_modification aminoacid="M" massdiff="15.9949" mass="147.0354"variable="Y" />
+        <!-- Input parameters -->
+        <parameter name="com.lordjoe.Log4jProperties" value="sparkLog4j.properties" />
+        <parameter name="com.lordjoe.distributed.PathPrepend" value="/Users/sangzhe/desktop/sparkhydra/data/eg3SmallTest/" />
+        <parameter name="com.lordjoe.distributed.hydra.BypassScoring" value="false" />
+        <parameter name="com.lordjoe.distributed.hydra.KeepBinStatistics" value="true" />
+        <parameter name="com.lordjoe.distributed.hydra.MaxProteins" value="0" />
+        <parameter name="com.lordjoe.distributed.hydra.MaxSpectra" value="0" />
+        <parameter name="com.lordjoe.distributed.hydra.doGCAfterBin" value="false" />
+        <parameter name="com.lordjoe.dostributes.NumberThreadsToAccumulate" value="8" />
+        <parameter name="comet.MaxPeptideListSize" value="100000" />
+        <parameter name="comet.fragment_bin_offset" value="0.0" />
+        <parameter name="comet.fragment_bin_tol" value="0.02" />
+        <parameter name="comet.mass_tolerance" value="30" />
+        <parameter name="comet.max_fragment_charge" value="3" />
+        <parameter name="list path, default parameters" value="parameters_searchGUI.xml" />
+        <parameter name="list path, taxonomy information" value="taxonomy_searchGUI.xml" />
+        <parameter name="org.systemsbiology.jxtandem.DesiredXMLInputMappers" value="20" />
+        <parameter name="org.systemsbiology.xtandem.HardCodeModifications" value="false" />
+        <parameter name="output, histogram column width" value="50" />
+        <parameter name="output, histograms" value="no" />
+        <parameter name="output, log path" value="" />
+        <parameter name="output, maximum valid expectation value" value="100.0" />
+        <parameter name="output, message" value="" />
+        <parameter name="output, one sequence copy" value="no" />
+        <parameter name="output, parameters" value="yes" />
+        <parameter name="output, path" value="eg3Sample.pep.xml" />
+        <parameter name="output, path hashing" value="yes" />
+        <parameter name="output, performance" value="yes" />
+        <parameter name="output, proteins" value="yes" />
+        <parameter name="output, results" value="all" />
+        <parameter name="output, sequence path" value="" />
+        <parameter name="output, sequences" value="no" />
+        <parameter name="output, sort results by" value="spectrum" />
+        <parameter name="output, spectra" value="yes" />
+        <parameter name="output, xsl path" value="tandem-style.xsl" />
+        <parameter name="protein, C-terminal residue modification mass" value="0.0" />
+        <parameter name="protein, N-terminal residue modification mass" value="0.0" />
+        <parameter name="protein, cleavage C-terminal mass change" value="19.01784116688" />
+        <parameter name="protein, cleavage N-terminal mass change" value="1.007276466" />
+        <parameter name="protein, cleavage semi" value="no" />
+        <parameter name="protein, cleavage site" value="[RK]|{P}" />
+        <parameter name="protein, homolog management" value="no" />
+        <parameter name="protein, modified residue mass file" value="" />
+        <parameter name="protein, quick acetyl" value="yes" />
+        <parameter name="protein, quick pyrolidone" value="yes" />
+        <parameter name="protein, stP bias" value="no" />
+        <parameter name="protein, taxon" value="SmallSampleProteins.fasta" />
+        <parameter name="refine" value="yes" />
+        <parameter name="refine, cleavage semi" value="no" />
+        <parameter name="refine, maximum valid expectation value" value="0.01" />
+        <parameter name="refine, modification mass" value="" />
+        <parameter name="refine, point mutations" value="no" />
+        <parameter name="refine, potential C-terminus modifications" value="" />
+        <parameter name="refine, potential N-terminus modifications" value="" />
+        <parameter name="refine, potential modification mass" value="" />
+        <parameter name="refine, potential modification motif" value="" />
+        <parameter name="refine, saps" value="no" />
+        <parameter name="refine, sequence path" value="" />
+        <parameter name="refine, spectrum synthesis" value="yes" />
+        <parameter name="refine, tic percent" value="20" />
+        <parameter name="refine, unanticipated cleavage" value="yes" />
+        <parameter name="refine, use potential modifications for full refinement" value="no" />
+        <parameter name="residue, modification mass" value="" />
+        <parameter name="residue, potential modification mass" value="15.9949@M" />
+        <parameter name="residue, potential modification motif" value="" />
+        <parameter name="scoring, a ions" value="no" />
+        <parameter name="scoring, algorithm" value="comet" />
+        <parameter name="scoring, b ions" value="yes" />
+        <parameter name="scoring, c ions" value="no" />
+        <parameter name="scoring, cyclic permutation" value="no" />
+        <parameter name="scoring, include reverse" value="no" />
+        <parameter name="scoring, maximum missed cleavage sites" value="2" />
+        <parameter name="scoring, minimum ion count" value="4" />
+        <parameter name="scoring, x ions" value="no" />
+        <parameter name="scoring, y ions" value="yes" />
+        <parameter name="scoring, z ions" value="no" />
+        <parameter name="spark.default.parallelism" value="4" />
+        <parameter name="spark.executor.memory" value="4g" />
+        <parameter name="spark.hadoop.validateOutputSpecs" value="false" />
+        <parameter name="spark.kryo.registrator" value="com.lordjoe.distributed.hydra.HydraKryoSerializer" />
+        <parameter name="spark.master" value="local[*]" />
+        <parameter name="spark.mesos.coarse" value="true" />
+        <parameter name="spark.serializer" value="org.apache.spark.serializer.KryoSerializer" />
+        <parameter name="spectrum, dynamic range" value="100.0" />
+        <parameter name="spectrum, fragment mass type" value="monoisotopic" />
+        <parameter name="spectrum, fragment monoisotopic mass error" value="0.5" />
+        <parameter name="spectrum, fragment monoisotopic mass error units" value="ppm" />
+        <parameter name="spectrum, maximum parent charge" value="4" />
+        <parameter name="spectrum, minimum fragment mz" value="200.0" />
+        <parameter name="spectrum, minimum parent m+h" value="500.0" />
+        <parameter name="spectrum, minimum peaks" value="5" />
+        <parameter name="spectrum, parent monoisotopic mass error minus" value="20.0" />
+        <parameter name="spectrum, parent monoisotopic mass error plus" value="20.0" />
+        <parameter name="spectrum, parent monoisotopic mass error units" value="ppm" />
+        <parameter name="spectrum, parent monoisotopic mass isotope error" value="yes" />
+        <parameter name="spectrum, path" value="eg3Sample.mzXML" />
+        <parameter name="spectrum, sequence batch size" value="1000" />
+        <parameter name="spectrum, threads" value="4" />
+        <parameter name="spectrum, total peaks" value="50" />
+        <parameter name="spectrum, use noise suppression" value="no" />
+      </search_summary>
+      <spectrum_query  spectrum=".00008514.00008514.2" start_scan="000000008514" end_scan="000000008514"  precursor_neutral_mass="1424.7454" assumed_charge="2" >
+         <search_result>
+            <search_hit hit_rank="1" peptide="FGPQGPQHPAPHR" protein="TR_F1ML22_REVERSED_F1ML22_BOVIN"
+                       protein_descr="TR_F1ML22_REVERSED_F1ML22_BOVIN"
+                         peptide_prev_aa="K" peptide_next_aa="G"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="165" calc_neutral_pep_mass="165"  massdiff="0.0393" num_missed_cleavages="0"  >
+             <search_score name="hyperscore" value="0.1914"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3149.7566"/>
+              </search_hit>
+            <search_hit hit_rank="2" peptide="RYTAIEVDLAMK" protein="O62654_REVERSED"
+                       protein_descr="O62654_REVERSED"
+                         peptide_prev_aa="K" peptide_next_aa="V"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="165" calc_neutral_pep_mass="165"  massdiff="0.0121" num_missed_cleavages="1"  >
+             <modification_info modified_peptide="RYTAIEVDLAM[15.995]K" >
+             <mod_aminoacid_mass position="11" mass="147.035" />
+             </modification_info>
+             <search_score name="hyperscore" value="0.0355"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3159.9537"/>
+              </search_hit>
+         </search_result>
+      </spectrum_query>
+
+      <spectrum_query  spectrum=".00008852.00008852.2" start_scan="000000008852" end_scan="000000008852"  precursor_neutral_mass="1739.8298" assumed_charge="2" >
+         <search_result>
+            <search_hit hit_rank="1" peptide="MPCTEDYLSLILNR" protein="P02769"
+                       protein_descr="P02769"
+                         peptide_prev_aa="R" peptide_next_aa="L"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="246" calc_neutral_pep_mass="246"  massdiff="0.0076" num_missed_cleavages="0"  >
+             <modification_info modified_peptide="M[15.995]PCTEDYLSLILNR" >
+             <mod_aminoacid_mass position="1" mass="147.035" />
+             </modification_info>
+             <search_score name="hyperscore" value="1.8379"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3044.0995"/>
+              </search_hit>
+            <search_hit hit_rank="2" peptide="QDIPDWMHLEGQQK" protein="TR_F1N4C7_REVERSED_F1N4C7_BOVIN"
+                       protein_descr="TR_F1N4C7_REVERSED_F1N4C7_BOVIN"
+                         peptide_prev_aa="K" peptide_next_aa="H"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="246" calc_neutral_pep_mass="246"  massdiff="0.0361" num_missed_cleavages="0"  >
+             <modification_info modified_peptide="QDIPDWM[15.995]HLEGQQK" >
+             <mod_aminoacid_mass position="7" mass="147.035" />
+             </modification_info>
+             <search_score name="hyperscore" value="0.5869"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3124.0485"/>
+              </search_hit>
+         </search_result>
+      </spectrum_query>
+
+      <spectrum_query  spectrum=".00009075.00009075.2" start_scan="000000009075" end_scan="000000009075"  precursor_neutral_mass="1566.7411" assumed_charge="2" >
+         <search_result>
+            <search_hit hit_rank="1" peptide="DAFLGSFLYEYSR" protein="P02769"
+                       protein_descr="P02769"
+                         peptide_prev_aa="K" peptide_next_aa="R"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="96" calc_neutral_pep_mass="96"  massdiff="0.0056" num_missed_cleavages="0"  >
+             <search_score name="hyperscore" value="1.6822"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3053.9362"/>
+              </search_hit>
+            <search_hit hit_rank="2" peptide="DNFPNFLGACEKR" protein="Q28050"
+                       protein_descr="Q28050"
+                         peptide_prev_aa="K" peptide_next_aa="G"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="96" calc_neutral_pep_mass="96"  massdiff="0.0162" num_missed_cleavages="1"  >
+             <search_score name="hyperscore" value="0.1196"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3154.4497"/>
+              </search_hit>
+         </search_result>
+      </spectrum_query>
+
+      <spectrum_query  spectrum=".00009100.00009100.2" start_scan="000000009100" end_scan="000000009100"  precursor_neutral_mass="1723.8331" assumed_charge="2" >
+         <search_result>
+            <search_hit hit_rank="1" peptide="MPCTEDYLSLILNR" protein="P02769"
+                       protein_descr="P02769"
+                         peptide_prev_aa="R" peptide_next_aa="L"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="152" calc_neutral_pep_mass="152"  massdiff="0.0057" num_missed_cleavages="0"  >
+             <search_score name="hyperscore" value="0.8078"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3109.7814"/>
+              </search_hit>
+            <search_hit hit_rank="2" peptide="CIDMDVKMAKEQIK" protein="TR_F1MQ15_REVERSED_F1MQ15_BOVIN"
+                       protein_descr="TR_F1MQ15_REVERSED_F1MQ15_BOVIN"
+                         peptide_prev_aa="R" peptide_next_aa="T"
+                                      num_tot_proteins="1"  num_matched_ions="0" tot_num_ions="152" calc_neutral_pep_mass="152"  massdiff="0.0024" num_missed_cleavages="2"  >
+             <modification_info modified_peptide="CIDMDVKM[15.995]AKEQIK" >
+             <mod_aminoacid_mass position="8" mass="147.035" />
+             </modification_info>
+             <search_score name="hyperscore" value="0.4536"/>
+             <search_score name="bscore" value="0.0000"/>
+             <search_score name="yscore" value="0.0000"/>
+             <search_score name="expect" value="3132.6926"/>
+              </search_hit>
+         </search_result>
+      </spectrum_query>
+
+     </msms_run_summary>
+</msms_pipeline_analysis>
