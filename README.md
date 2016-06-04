@@ -1,4 +1,4 @@
-## About pepXML
+## About jpepxml
 
 A Java API to the pepXML format file.
 
